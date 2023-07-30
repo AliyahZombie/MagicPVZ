@@ -38,7 +38,7 @@ jobs:
 
     - name: Build with Gradle
 
-      run: ./gradlew assembleRelease
+      run: ./gradlew build
 
     - name: Upload a Build Artifact
 
@@ -48,4 +48,4 @@ jobs:
 
         name: ci.apk
         
-        path: build
+        path: app/build/outputs/apk
