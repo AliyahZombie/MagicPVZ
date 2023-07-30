@@ -47,3 +47,5 @@ jobs:
       with:
 
         name: ci.apk
+        
+        path: ./output.apk
