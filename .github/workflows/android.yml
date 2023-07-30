@@ -40,12 +40,22 @@ jobs:
 
       run: ./gradlew build
 
-    - name: Upload a Build Artifact
+    - name: Upload release
 
       uses: actions/upload-artifact@v3.1.2
 
       with:
 
-        name: ci.apk
+        name: app-release.apk
         
-        path: app/build/outputs/apk
+        path: app/build/outputs/apk/release/app-release.apk
+     
+    - name: Upload a debug
+        
+      uses: actions/upload-artifact@v3.1.2
+
+        with:
+
+        name: app-debug.apk
+
+        path: app/build/outputs/apk/debug/app-debug.apk
