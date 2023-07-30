@@ -2,6 +2,8 @@ plugins {
     id 'com.android.application'
 }
 
+def outputPathName =  "./output.apk"
+
 android {
     namespace 'com.trans.pvz'
     compileSdk 33
