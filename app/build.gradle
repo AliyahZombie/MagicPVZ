@@ -2,7 +2,6 @@ plugins {
     id 'com.android.application'
 }
 
-def outputPathName =  "./output.apk"
 
 android {
     namespace 'com.trans.pvz'
