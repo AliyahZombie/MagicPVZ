@@ -39,6 +39,10 @@ jobs:
     - name: Build with Gradle
 
       run: ./gradlew build
+    
+    - name: pack output
+    
+      run: zip -r output.zip build
 
     - name: Upload a Build Artifact
 
@@ -48,4 +52,4 @@ jobs:
 
         name: ci.apk
         
-        path: ./output.apk
+        path: output.zip
