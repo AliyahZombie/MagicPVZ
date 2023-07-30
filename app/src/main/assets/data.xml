@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <!--是否开启自动备份存档-->
+    <boolean name="autoBackUp" value="true" />
+    <!--是否开启传送带秒传送-->
+    <boolean name="enableConveyorBeltFast" value="true" />
+    <!--是否开启手动收集阳光金币-->
+    <boolean name="enableManualCollect" value="false" />
+    <!--是否关闭游戏内道具栏-->
+    <boolean name="disableShop" value="false" />
+    <!--是否开启重型武器重力感应-->
+    <boolean name="heavyWeaponAccel" value="false" />
+    <!--是否开启菜单修改器-->
+    <boolean name="useMenu" value="true" />
+    <!--内置游戏键盘是否为隐藏状态-->
+    <boolean name="isVisible" value="false" />
+    <!--是否使用平滑光标-->
+    <boolean name="useSmoothCursor" value="true" />
+
+</map>

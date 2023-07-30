@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<atlases>
+    <atlas base="reanim/" path="crazydave-atlas1" format="a8r8g8b8" >
+        <image name="CrazyDave_body1.png" x="0" y="0" w="344" h="401" />
+        <image name="CrazyDave_body2.png" x="0" y="404" w="281" h="373" />
+        <image name="CrazyDave_Zombie_arm1.png" x="0" y="778" w="234" h="191" />
+        <image name="CrazyDave_zombie_arm2.png" x="236" y="778" w="234" h="176" />
+        <image name="CrazyDave_head.png" x="284" y="404" w="180" h="189" />
+        <image name="CrazyDave_zombie_body.png" x="346" y="0" w="158" h="181" />
+        <image name="CrazyDave_zombie_head1.png" x="284" y="594" w="167" h="170" />
+        <image name="CrazyDave_foot1.png" x="0" y="972" w="185" h="139" />
+        <image name="CrazyDave_pot.png" x="188" y="972" w="240" h="107" />
+        <image name="CrazyDave_zombie_lowerleg2.png" x="346" y="184" w="121" h="171" />
+        <image name="CrazyDave_foot2.png" x="0" y="1112" w="172" h="112" />
+        <image name="CrazyDave_beard.png" x="174" y="1112" w="144" h="109" />
+        <image name="CrazyDave_zombie_foot1.png" x="320" y="1112" w="142" h="108" />
+        <image name="CrazyDave_zombie_foot2.png" x="0" y="1226" w="141" h="107" />
+        <image name="CrazyDave_innerpants.png" x="144" y="1226" w="216" h="54" />
+        <image name="CrazyDave_zombie_upperleg2.png" x="0" y="1336" w="120" h="92" />
+        <image name="CrazyDave_zombie_hand1.png" x="0" y="1430" w="97" h="106" />
+        <image name="CrazyDave_zombie_hand2.png" x="100" y="1430" w="96" h="106" />
+        <image name="CrazyDave_zombie_lowerleg1.png" x="0" y="1538" w="78" h="129" />
+        <image name="CrazyDave_outerarm.png" x="122" y="1336" w="122" h="82" />
+        <image name="CrazyDave_handinghand.png" x="246" y="1336" w="114" h="75" />
+        <image name="CrazyDave_zombie_upperleg1.png" x="362" y="1336" w="117" h="70" />
+        <image name="CrazyDave_pot_inside.png" x="362" y="1226" w="121" h="52" />
+        <image name="CrazyDave_innerarm.png" x="430" y="972" w="78" h="75" />
+        <image name="CrazyDave_innerhand.png" x="198" y="1430" w="81" h="71" />
+        <image name="CrazyDave_zombie_grabhand.png" x="80" y="1538" w="62" h="90" />
+        <image name="CrazyDave_outerhand.png" x="452" y="594" w="52" h="88" />
+        <image name="CrazyDave_zombie_head2.png" x="144" y="1282" w="91" h="49" />
+        <image name="CrazyDave_mouth1.png" x="280" y="1430" w="89" h="50" />
+        <image name="CrazyDave_mouth2.png" x="372" y="1430" w="89" h="50" />
+        <image name="CrazyDave_mouth6.png" x="144" y="1538" w="89" h="50" />
+        <image name="CrazyDave_mouth4.png" x="236" y="1538" w="89" h="50" />
+        <image name="CrazyDave_mouth3.png" x="326" y="1538" w="89" h="50" />
+        <image name="CrazyDave_mouth5.png" x="418" y="1538" w="89" h="50" />
+        <image name="CrazyDave_outerfinger1.png" x="470" y="184" w="36" h="39" />
+        <image name="CrazyDave_handinghand3.png" x="470" y="224" w="32" h="43" />
+        <image name="CrazyDave_handinghand2.png" x="470" y="270" w="41" h="32" />
+        <image name="CrazyDave_innerfinger3.png" x="470" y="304" w="35" h="35" />
+        <image name="CrazyDave_outerfinger2.png" x="346" y="356" w="43" h="28" />
+        <image name="CrazyDave_innerfinger2.png" x="466" y="404" w="35" h="34" />
+        <image name="CrazyDave_eye.png" x="466" y="440" w="38" h="31" />
+        <image name="CrazyDave_blink2.png" x="466" y="472" w="34" h="33" />
+        <image name="CrazyDave_blink1.png" x="466" y="508" w="34" h="33" />
+        <image name="CrazyDave_innerfinger1.png" x="392" y="356" w="39" h="28" />
+        <image name="CrazyDave_outerfinger3.png" x="432" y="356" w="42" h="26" />
+        <image name="CrazyDave_innerfinger4.png" x="466" y="542" w="29" h="35" />
+        <image name="CrazyDave_outerfinger4.png" x="452" y="684" w="31" h="28" />
+        <image name="CrazyDave_zombie_rope.png" x="476" y="356" w="23" h="26" />
+        <image name="CrazyDave_eyebrow.png" x="452" y="714" w="30" h="18" />
+    </atlas>
+</atlases>

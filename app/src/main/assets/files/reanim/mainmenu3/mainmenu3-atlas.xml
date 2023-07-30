@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<atlases>
+    <atlas base="reanim/mainmenu3/" path="mainmenu3-atlas1" format="a8r8g8b8" >
+        <image name="main stone.png" x="0" y="0" w="447" h="373" />
+        <image name="more stump.png" x="0" y="376" w="229" h="282" />
+        <image name="VS.png" x="0" y="660" w="162" h="356" />
+        <image name="puzzle.png" x="164" y="660" w="166" h="329" />
+        <image name="back pillar.png" x="0" y="1018" w="137" h="360" />
+        <image name="minigames.png" x="232" y="376" w="151" h="275" />
+        <image name="VS bust.png" x="140" y="1018" w="100" h="356" />
+        <image name="back stone.png" x="332" y="660" w="178" h="190" />
+        <image name="VS stone.png" x="242" y="1018" w="162" h="192" />
+        <image name="growth.png" x="242" y="1212" w="161" h="149" />
+        <image name="bust.png" x="332" y="852" w="157" h="117" />
+        <image name="achievements stem.png" x="0" y="1380" w="135" h="106" />
+        <image name="help stem.png" x="384" y="376" w="102" h="99" />
+        <image name="almanac plant 9.png" x="384" y="476" w="98" h="92" />
+        <image name="return.png" x="406" y="1018" w="90" h="96" />
+        <image name="return selected.png" x="404" y="1212" w="90" h="96" />
+        <image name="return pressed.png" x="138" y="1380" w="90" h="96" />
+        <image name="Matt_head.png" x="230" y="1380" w="90" h="95" />
+        <image name="Matt_mouth.png" x="322" y="1380" w="90" h="95" />
+        <image name="Matt_smile.png" x="414" y="1380" w="90" h="95" />
+        <image name="Matt_angrymouth.png" x="0" y="1488" w="90" h="95" />
+        <image name="Matt_blink.png" x="92" y="1488" w="90" h="95" />
+        <image name="Matt_angryeyes.png" x="184" y="1488" w="90" h="95" />
+        <image name="puzzle vase.png" x="0" y="1584" w="75" h="113" />
+        <image name="achievements selected.png" x="276" y="1488" w="89" h="95" />
+        <image name="achievements pressed.png" x="368" y="1488" w="89" h="95" />
+        <image name="achievements.png" x="78" y="1584" w="89" h="95" />
+        <image name="unlock selected.png" x="406" y="1116" w="92" h="91" />
+        <image name="unlock pressed.png" x="168" y="1584" w="92" h="91" />
+        <image name="unlock.png" x="262" y="1584" w="92" h="91" />
+        <image name="flowerdisabled.png" x="356" y="1584" w="92" h="91" />
+        <image name="help selected.png" x="0" y="1700" w="92" h="91" />
+        <image name="help.png" x="94" y="1700" w="92" h="91" />
+        <image name="help pressed.png" x="188" y="1700" w="92" h="91" />
+        <image name="Rich_head.png" x="282" y="1700" w="92" h="85" />
+        <image name="Rich_angryeyes.png" x="376" y="1700" w="92" h="85" />
+        <image name="Rich_smile.png" x="0" y="1792" w="92" h="85" />
+        <image name="Rich_blink.png" x="94" y="1792" w="92" h="85" />
+        <image name="Rich_angry mouth.png" x="188" y="1792" w="92" h="85" />
+        <image name="return stem color.png" x="0" y="1880" w="71" h="108" />
+        <image name="growth1.png" x="384" y="570" w="96" h="74" />
+        <image name="almanac plant 7.png" x="74" y="1880" w="64" h="107" />
+        <image name="unlock stem.png" x="450" y="0" w="58" h="74" />
+        <image name="bonseyes1 blink2.png" x="282" y="1792" w="115" h="35" />
+        <image name="bonseyes1.png" x="282" y="1830" w="115" h="34" />
+        <image name="bonseyes1 blink1.png" x="140" y="1880" w="115" h="34" />
+        <image name="almanac plant 5.png" x="450" y="76" w="41" h="84" />
+        <image name="skull.png" x="450" y="162" w="54" h="62" />
+        <image name="almanac plant 1.png" x="450" y="226" w="60" h="47" />
+        <image name="almanac plant 6.png" x="450" y="276" w="61" h="45" />
+        <image name="VS mouth.png" x="458" y="1488" w="41" h="52" />
+        <image name="almanac plant 4.png" x="450" y="322" w="46" h="39" />
+        <image name="hat.png" x="404" y="1310" w="42" h="39" />
+        <image name="almanac plant 3.png" x="458" y="1542" w="40" h="40" />
+        <image name="puzzle flower2.png" x="450" y="1584" w="38" h="41" />
+        <image name="growth4.png" x="448" y="1310" w="41" h="38" />
+        <image name="grass03.png" x="450" y="1628" w="44" h="34" />
+        <image name="grass04.png" x="400" y="1792" w="44" h="34" />
+        <image name="almanac plant 8.png" x="446" y="1792" w="53" h="28" />
+        <image name="almanac plant 2.png" x="470" y="1700" w="31" h="39" />
+        <image name="puzzle flower1.png" x="470" y="1740" w="34" h="33" />
+        <image name="grass01.png" x="140" y="1916" w="29" h="35" />
+        <image name="grass02.png" x="400" y="1830" w="29" h="28" />
+        <image name="VS tie.png" x="164" y="990" w="31" h="20" />
+        <image name="VS lids.png" x="332" y="970" w="40" h="14" />
+        <image name="growth2.png" x="488" y="376" w="22" h="15" />
+        <image name="VS stash chunk.png" x="492" y="76" w="18" h="15" />
+        <image name="growth5.png" x="492" y="94" w="18" h="15" />
+        <image name="growth3.png" x="488" y="392" w="19" h="14" />
+        <image name="growth6.png" x="492" y="110" w="16" h="9" />
+        <image name="pupil.png" x="492" y="122" w="5" h="5" />
+    </atlas>
+</atlases>

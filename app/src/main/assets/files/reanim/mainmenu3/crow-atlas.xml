@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<atlases>
+    <atlas base="reanim/mainmenu3/" path="crow-atlas1" format="a8r8g8b8" >
+        <image name="CrowFlyFrames1.png" x="0" y="0" w="484" h="568" />
+        <image name="CrowIdlePeckFrames2.png" x="486" y="0" w="484" h="568" />
+        <image name="CrowIdlePeckFrames1.png" x="972" y="0" w="484" h="568" />
+        <image name="CrowFlyFrames2.png" x="1458" y="0" w="484" h="568" />
+        <image name="CrowIdlePeckFrames3.png" x="0" y="570" w="484" h="568" />
+        <image name="CrowFlyFrames3.png" x="486" y="570" w="484" h="568" />
+        <image name="CrowLandFrames3.png" x="972" y="570" w="484" h="568" />
+        <image name="CrowIdleFrames1.png" x="1458" y="570" w="484" h="568" />
+        <image name="CrowIFeather.png" x="0" y="1140" w="484" h="568" />
+        <image name="CrowLandFrames1.png" x="486" y="1140" w="484" h="568" />
+        <image name="CrowIdleCawFrames1.png" x="972" y="1140" w="484" h="568" />
+        <image name="CrowTakeOffFrames2.png" x="1458" y="1140" w="484" h="568" />
+        <image name="CrowLandFrames2.png" x="0" y="1710" w="484" h="568" />
+        <image name="CrowFlyFrames4.png" x="486" y="1710" w="484" h="568" />
+        <image name="CrowTakeOffFrames1.png" x="972" y="1710" w="484" h="568" />
+        <image name="CrowIdleBlinkFrames1.png" x="1458" y="1710" w="484" h="568" />
+        <image name="CrowIdleBlinkFrames2.png" x="0" y="2280" w="484" h="568" />
+    </atlas>
+</atlases>

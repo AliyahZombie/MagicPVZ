@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="without_button">启动原版TV版</string>
+    <string name="button_set">设置内置键盘</string>
+    <string name="addon_set">附加设置</string>
+</resources>

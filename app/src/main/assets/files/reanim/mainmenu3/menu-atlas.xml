@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<atlases>
+    <atlas base="reanim/mainmenu3/" path="menu-atlas1" format="a8r8g8b8" >
+        <image name="adventure selected.png" x="0" y="0" w="248" h="138" />
+        <image name="adventure.png" x="250" y="0" w="248" h="138" />
+        <image name="adventure pressed.png" x="500" y="0" w="248" h="138" />
+        <image name="start adventure pressed.png" x="750" y="0" w="243" h="138" />
+        <image name="start adventure.png" x="0" y="140" w="243" h="138" />
+        <image name="start adventure selected.png" x="246" y="140" w="243" h="138" />
+        <image name="adventure coop pressed.png" x="490" y="140" w="241" h="136" />
+        <image name="adventure coop.png" x="734" y="140" w="241" h="136" />
+        <image name="adventure coop selected.png" x="0" y="280" w="241" h="136" />
+        <!-- image name="more ways selected.png" x="244" y="280" w="215" h="125" />
+        <image name="more ways pressed.png" x="460" y="280" w="215" h="125" />
+        <image name="more ways.png" x="678" y="280" w="215" h="125" / -->
+        <image name="zengardenbutton pressed.png" x="0" y="418" w="180" h="147" />
+        <image name="zengardenbutton selected.png" x="182" y="418" w="180" h="147" />
+        <image name="zengardenbutton.png" x="364" y="418" w="180" h="147" />
+        <image name="almanac pot.png" x="546" y="418" w="193" h="128" />
+        <image name="leaderboards pressed.png" x="0" y="568" w="179" h="137" />
+        <image name="leaderboards selected.png" x="182" y="568" w="179" h="137" />
+        <image name="leaderboards button.png" x="362" y="568" w="179" h="137" />
+        <image name="mail.png" x="0" y="706" w="146" h="163" />
+        <image name="almanac plant 10.png" x="742" y="418" w="143" h="126" />
+        <image name="minigames pressed.png" x="544" y="568" w="104" h="134" />
+        <image name="minigames selected.png" x="650" y="568" w="104" h="134" />
+        <image name="minigames button.png" x="756" y="568" w="104" h="134" />
+        <image name="puzzle button.png" x="894" y="280" w="100" h="115" />
+        <image name="puzzle selected.png" x="886" y="418" w="100" h="115" />
+        <image name="puzzle pressed.png" x="862" y="568" w="100" h="115" />
+        <image name="shop button.png" x="148" y="706" w="164" h="68" />
+        <image name="shop pressed.png" x="314" y="706" w="164" h="68" />
+        <image name="shop selected.png" x="480" y="706" w="164" h="67" />
+        <image name="survival button.png" x="148" y="776" w="138" h="77" />
+        <image name="survival pressed.png" x="288" y="776" w="138" h="77" />
+        <image name="Back ball button pressed.png" x="0" y="872" w="133" h="78" />
+        <image name="Back ball button selected.png" x="136" y="872" w="133" h="78" />
+        <image name="Back ball button.png" x="270" y="872" w="133" h="78" />
+        <image name="back stone pressed.png" x="0" y="952" w="112" h="92" />
+        <image name="back stone button.png" x="114" y="952" w="112" h="92" />
+        <image name="back stone selected.png" x="228" y="952" w="112" h="92" />
+        <image name="almanac selected.png" x="646" y="706" w="165" h="62" />
+        <image name="more pressed.png" x="428" y="776" w="153" h="66" />
+        <image name="more.png" x="584" y="776" w="153" h="66" />
+        <image name="more selected.png" x="738" y="776" w="153" h="66" />
+        <image name="almanac button.png" x="814" y="706" w="165" h="59" />
+        <image name="survival selected.png" x="406" y="872" w="138" h="68" />
+        <image name="almanac pressed.png" x="546" y="872" w="163" h="56" />
+        <image name="vs coop pressed.png" x="342" y="952" w="99" h="73" />
+        <image name="vs coop.png" x="444" y="952" w="99" h="73" />
+        <image name="vs coop selected.png" x="544" y="952" w="99" h="73" />
+        <image name="VS selected.png" x="646" y="952" w="101" h="70" />
+        <image name="VS button.png" x="748" y="952" w="101" h="70" />
+        <image name="VS pressed.png" x="852" y="952" w="101" h="70" />
+        <image name="mail selected.png" x="0" y="1046" w="89" h="70" />
+        <image name="mail pressed.png" x="92" y="1046" w="89" h="70" />
+        <image name="mail button.png" x="182" y="1046" w="89" h="70" />
+    </atlas>
+</atlases>
