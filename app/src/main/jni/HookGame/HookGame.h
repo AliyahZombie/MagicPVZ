@@ -1479,7 +1479,7 @@ void Zombie_ApplyChill(int instance, bool isLongChill){
     if(isLongChill){
         length = 2000;
     }
-    *(_DWORD *) (instance + 0xc4) = length
+    *(_DWORD *) (instance + 0xc4) = length;
     
 }
 
