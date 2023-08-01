@@ -1,4 +1,4 @@
-name: Android CI
+name: MagicPVZ Build
 
 on:
   push:
