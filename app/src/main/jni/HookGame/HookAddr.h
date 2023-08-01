@@ -238,7 +238,7 @@ void Call_GetFunctionAddr() {
     // Method hook that magicpvz used
     Zombie_ZombieInitializeAddr = reinterpret_cast<uintptr_t>(dlsym(handle, "_ZN6Zombie16ZombieInitialize10ZombieTypebPS_ib"));
     Zombie_ApplyChillAddr = reinterpret_cast<uintptr_t>(dlsym(handle, "_ZN6Zombie10ApplyChillEb"));
-    Board_DisplayAdviceAddr = reinterpret_cast<uintptr_t>(dlsym(handle, "_ZN5Board13DisplayAdviceERKSs12MessageStyle10AdvicetType"));
+    Board_DisplayAdviceAddr = reinterpret_cast<uintptr_t>(dlsym(handle, "_ZN5Board13DisplayAdviceERKSs12MessageStyle10AdviceType"));
 }
 
 
