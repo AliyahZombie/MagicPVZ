@@ -215,7 +215,7 @@ int (*GamepadControls_OnKeyDown)(int a1, int a2, unsigned int a3);
 
 int (*GamepadControls_OnButtonDown)(int a1, int a2, int a3, unsigned int a4);
 
-void (*Board_DisplayAdvice)(int , std::string const&, short, short);
+void (*Board_DisplayAdvice)(int , std::string const&, uint, uint16_t);
 
 // 确定 13 1096
 // 返回 27 1096
@@ -1546,7 +1546,7 @@ void CallHook() {
     Board_ClearCursor = (int (*)(int *, int)) Board_ClearCursorAddr;
     Board_UpdateGame = (int (*)(void *)) Board_UpdateGameAddr;
     LawnApp_ReanimationTryToGet = (int (*)(int, int)) LawnApp_ReanimationTryToGetAddr;
-    Board_DisplayAdvice = (void (*)(int, std::string const&, short, short)) Board_DisplayAdviceAddr;
+    Board_DisplayAdvice = (void (*)(int, std::string const&, uint, uint16_t)) Board_DisplayAdviceAddr;
 
 
     MSHookFunction((void *) Board_UpdateAddr, (void *) Board_Update, (void **) &old_Board_Update);
