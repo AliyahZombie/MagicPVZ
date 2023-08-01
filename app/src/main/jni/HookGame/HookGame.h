@@ -215,7 +215,7 @@ int (*GamepadControls_OnKeyDown)(int a1, int a2, unsigned int a3);
 
 int (*GamepadControls_OnButtonDown)(int a1, int a2, int a3, unsigned int a4);
 
-void (*Board_DisplayAdvice)(int , std::string const&, short, short)
+void (*Board_DisplayAdvice)(int , std::string const&, short, short);
 
 // 确定 13 1096
 // 返回 27 1096
