@@ -1327,7 +1327,8 @@ int (*old_Zombie_Update)(int a1);
 int Zombie_Update(int instance) {
     bool a = *(_BYTE *) (instance + 0xc8);
     if (a){
-        ZOMBIE_DieNoLoot(instance);
+        *(_Float16*)(instance + 0x3c) = 0;
+        //*(_Float16*)(instance + 0x3c) = 0;
     }
     return old_Zombie_Update(instance);
 }
