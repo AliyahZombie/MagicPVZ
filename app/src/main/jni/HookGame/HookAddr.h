@@ -112,7 +112,10 @@ uintptr_t ApplyBurnAddr;
 uintptr_t UpdateConveyorBeltAddr;
 uintptr_t DoCheatDialogAddr;
 uintptr_t DoCheatCodeDialogAddr;
-uintptr_t Zombie_ZombieInitialize;
+
+// magic pvz
+uintptr_t Zombie_ZombieInitializeAddr;
+uintptr_t Zombie_ApplyChillAddr;
 
 void Call_GetFunctionAddr() {
 
@@ -232,7 +235,9 @@ void Call_GetFunctionAddr() {
     VSResultsMenu_UpdateAddr = reinterpret_cast<uintptr_t>(dlsym(handle, "_ZN13VSResultsMenu6UpdateEv"));
 
     // Method hook that magicpvz used
-    Zombie_ZombieInitialize = reinterpret_cast<uintptr_t>(dlsym(handle, "_ZN6Zombie16ZombieInitialize10ZombieTypebPS_ib"));
+    Zombie_ZombieInitializeAddr = reinterpret_cast<uintptr_t>(dlsym(handle, "_ZN6Zombie16ZombieInitialize10ZombieTypebPS_ib"));
+    Zombie_ApplyChillAddr = reinterpret_cast<uintptr_t>(dlsym(handle, "_ZN6Zombie10ApplyChillEb"));
+
 }
 
 

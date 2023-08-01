@@ -3,7 +3,7 @@
 
     <application
         android:icon="@mipmap/icon"
-        android:label="PvZ TV版"
+        android:label="MagicPVZ"
         android:resizeableActivity="true"
         android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
 

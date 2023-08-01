@@ -6,6 +6,9 @@
 #include "StepOne_Patch.h"
 #include <Substrate/SubstrateHook.h>
 #include <Substrate/CydiaSubstrate.h>
+#include <cstdlib>
+#include <ctime>
+
 
 #define targetLibName "libGameMain.so"
 
@@ -862,6 +865,21 @@ int ProjectileInitialize(void *instance, int theX, int theY, int theRenderOrder,
             theProjectileType = randomInt(1, 10);//同时降低好友玉米黄油的概率!!
         }
     }
+    if (instance != NULL&&theProjectileType==0) {
+    // Use the random float to select the type with the given probabilities
+    float rand_num = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
+    if (rand_num < 0.30) {
+        // 30% chance
+        theProjectileType = 0;
+    } else if (rand_num < 0.70) {
+        // 40% chance
+        theProjectileType = 1;
+    } else {
+        // 30% chance
+        theProjectileType = 6;
+        }
+    }
+    
     return old_ProjectileInitialize(instance, theX, theY, theRenderOrder, theRow,
                                     theProjectileType);
 }
@@ -1455,6 +1473,15 @@ int VSResultsMenu_OnExit(int *a) {
     return old_VSResultsMenu_OnExit(a);
 }
 
+void (*origZombie_ApllyChill)(int, int);
+void Zombie_ApplyChill(int instance, bool isLongChill){
+    int length = 1000;
+    if(isLongChill){
+        length = 2000;
+    }
+    *(_DWORD *) (instance + 0xc4) = length
+    
+}
 
 void CallHook() {
 
@@ -1628,6 +1655,12 @@ void CallHook() {
     if (enableConveyorBeltFast) {
         MSHookFunction((void *) UpdateConveyorBeltAddr, (void *) UpdateConveyorBelt, NULL);
     }
+    // magic pvz hook
+    MSHookFunction(
+        (void*) Zombie_ApplyChillAddr,
+        (void*) Zombie_ApplyChill,
+        (void**) origZombie_ApllyChill
+    );
 
 }
 
