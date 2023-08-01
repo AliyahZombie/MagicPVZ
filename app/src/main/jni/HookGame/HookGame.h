@@ -1322,12 +1322,15 @@ int Plant_UpdateReanim(int *a1) {
 }
 
 
-//int (*old_Zombie_Update)(int a1);
-//
-//int Zombie_Update(int a1) {
-//    *(_BYTE *) (a1 + 360) = 1;
-//    return old_Zombie_Update(a1);
-//}
+int (*old_Zombie_Update)(int a1);
+
+int Zombie_Update(int instance) {
+    bool a = *(_BYTE *) (instance + 0xc8);
+    if (a){
+        ZOMBIE_DieNoLoot(instance);
+    }
+    return old_Zombie_Update(instance);
+}
 
 
 //bool requestVSSetup = false;
@@ -1606,9 +1609,9 @@ void CallHook() {
     MSHookFunction((void *) WaitForSecondPlayerDialog_KeyDownAddr,
                    (void *) WaitForSecondPlayerDialog_KeyDown,
                    (void **) old_WaitForSecondPlayerDialog_KeyDown);
-//    MSHookFunction((void *) Zombie_UpdateAddr,
-//                   (void *) Zombie_Update,
-//                   (void **) &old_Zombie_Update);
+    MSHookFunction((void *) Zombie_UpdateAddr,
+                    (void *) Zombie_Update,
+                    (void **) &old_Zombie_Update);
     MSHookFunction((void *) VSSetupMenu_UpdateAddr,
                    (void *) VSSetupMenu_Update,
                    (void **) &old_VSSetupMenu_Update);
