@@ -408,7 +408,7 @@ int (*old_Board_Update)(int *instance);
 int *BOARDINSTANCE;
 
 int Board_Update(int *instance) {
-    if(superStop) return instance;
+    if(superStop) return 0;
     if (instance != NULL) {
         BOARDINSTANCE = instance;
         isMainMenu = false;
