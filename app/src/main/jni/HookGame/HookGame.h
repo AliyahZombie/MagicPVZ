@@ -408,7 +408,7 @@ int (*old_Board_Update)(int *instance);
 int *BOARDINSTANCE;
 
 int Board_Update(int *instance) {
-    if(superStop) return 0;
+    
     if (instance != NULL) {
         BOARDINSTANCE = instance;
         isMainMenu = false;
@@ -621,7 +621,8 @@ int Board_Update(int *instance) {
         //-------------------------
 
     }
-
+    
+    if(superStop) return 0;
     return old_Board_Update(instance);
 }
 
@@ -921,6 +922,7 @@ int Plant_Update(void *instance) {
             Plant_Die(instance);
         }
     }
+    // if(superStop) return 0;
     return old_Plant_Update(instance);
 }
 
@@ -1351,6 +1353,7 @@ int Plant_UpdateReanim(int *a1) {
 int (*old_Zombie_Update)(int a1);
 
 int Zombie_Update(int instance) {
+    // if(superStop) return 0;
     bool a = *(_BYTE *) (instance + 0xc8);
     if (a){
         *(_Float16*)(instance + 0x3c) = 0;
