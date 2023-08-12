@@ -573,7 +573,7 @@ Java_com_android_support_CkHomuraMenu_GetFeatureList(JNIEnv *env, jobject thiz) 
             "Category_By-波奇酱",
 
             "Collapse_常用功能",//**
-            "1001_CollapseAdd_Toggle_高级暂停"
+            "1001_CollapseAdd_Toggle_高级暂停",
             "1_CollapseAdd_Toggle_阳光反加",
             "2_CollapseAdd_Toggle_卡片无冷却",
             "81_CollapseAdd_Toggle_出僵DEBUG",
