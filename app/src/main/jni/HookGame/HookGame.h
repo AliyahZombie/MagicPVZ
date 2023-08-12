@@ -215,7 +215,7 @@ int (*GamepadControls_OnKeyDown)(int a1, int a2, unsigned int a3);
 
 int (*GamepadControls_OnButtonDown)(int a1, int a2, int a3, unsigned int a4);
 
-void (*Board_DisplayAdvice)(int , std::string const&, uint, uint16_t);
+void (*Board_DisplayAdvice)(int* , std::string const&, uint, uint16_t);
 
 // 确定 13 1096
 // 返回 27 1096
@@ -402,10 +402,11 @@ void Reanimation_OverrideScale(int ream, float a2, float a3) {
 }
 
 int (*old_Board_Update)(int *instance);
+int *BOARDINSTANCE;
 
 int Board_Update(int *instance) {
-
     if (instance != NULL) {
+        BOARDINSTANCE = instance;
         isMainMenu = false;
         isInVSSetupMenu = false;
         nowScene = *(int *) ((uintptr_t) instance + 0x5660);
@@ -1483,7 +1484,8 @@ void Zombie_ApplyChill(int instance, bool isLongChill){
     }
     *(_DWORD *) (instance + 0xc4) = length;
     int board = *(_DWORD *) (instance + 0x14);
-    Board_DisplayAdvice(board, std::string("Display Advice test - Chilling "), 0, 0);
+    if(BOARDINSTANCE==NULL) return;
+    Board_DisplayAdvice(BOARDINSTANCE, std::string("Display Advice test - Chilling "), 0, 0);
     
 }
 
@@ -1546,7 +1548,7 @@ void CallHook() {
     Board_ClearCursor = (int (*)(int *, int)) Board_ClearCursorAddr;
     Board_UpdateGame = (int (*)(void *)) Board_UpdateGameAddr;
     LawnApp_ReanimationTryToGet = (int (*)(int, int)) LawnApp_ReanimationTryToGetAddr;
-    Board_DisplayAdvice = (void (*)(int, std::string const&, uint, uint16_t)) Board_DisplayAdviceAddr;
+    Board_DisplayAdvice = (void (*)(int*, std::string const&, uint, uint16_t)) Board_DisplayAdviceAddr;
 
 
     MSHookFunction((void *) Board_UpdateAddr, (void *) Board_Update, (void **) &old_Board_Update);
