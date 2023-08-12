@@ -124,6 +124,9 @@ int foleyToPlay = 8;
 //花园工具类型
 int cursorType = 0;
 
+// advanced option for magicpvz
+bool superStop = false;
+
 
 //花园触控
 bool requestSetZenGardenTool = false;
@@ -405,6 +408,7 @@ int (*old_Board_Update)(int *instance);
 int *BOARDINSTANCE;
 
 int Board_Update(int *instance) {
+    if(superStop) return;
     if (instance != NULL) {
         BOARDINSTANCE = instance;
         isMainMenu = false;
@@ -900,6 +904,7 @@ int Board_AddPlant(void *instance, int x, int y, int SeedType, int theImitaterTy
         if (PumpkinWithLadder && SeedType == 30) {
             AddALadder(instance, x, y);
         }
+        
     }
     return old_Board_AddPlant(instance, x, y, SeedType, theImitaterType);
 }
@@ -1478,14 +1483,14 @@ int VSResultsMenu_OnExit(int *a) {
 
 void (*origZombie_ApllyChill)(int, int);
 void Zombie_ApplyChill(int instance, bool isLongChill){
-    int length = 1000;
+    int length = 100;
     if(isLongChill){
-        length = 2000;
+        length = 200;
     }
     *(_DWORD *) (instance + 0xc4) = length;
     int board = *(_DWORD *) (instance + 0x14);
-    if(BOARDINSTANCE==NULL) return;
-    Board_DisplayAdvice(BOARDINSTANCE, std::string("Display Advice test - Chilling "), 0, 0);
+    //if(BOARDINSTANCE==NULL) return;
+    // Board_DisplayAdvice(BOARDINSTANCE, std::string("Display Advice test - Chilling "), 0, 0);
     
 }
 
