@@ -1483,7 +1483,7 @@ void Zombie_ApplyChill(int instance, bool isLongChill){
     }
     *(_DWORD *) (instance + 0xc4) = length;
     int board = *(_DWORD *) (instance + 0x14);
-    Board_DisplayAdvice(board, "Display Advice test - Chilling ", 0, 0);
+    Board_DisplayAdvice(board, std::string("Display Advice test - Chilling "), 0, 0);
     
 }
 
